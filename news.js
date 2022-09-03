@@ -12,7 +12,10 @@ const displayCategory = (categories)=>{
 categories.forEach(category => {
   // console.log(category)
   const categoriesLi= document.createElement('li');
-  categoriesLi.classList.add('nav-item')
+  categoriesLi.classList.add('nav-item');
+  categoriesLi.classList.add('border');
+    categoriesLi.classList.add('rounded')
+    categoriesLi.classList.add('mx-2');
   categoriesLi.innerHTML = `
           <a onclick="loadNewsCategory('${category.category_id}')" class="nav-link text-secondary fs-5" aria-current="page" href="#">${category.category_name}</a>
   `
@@ -72,7 +75,7 @@ const loadNewsCategory = (id) => {
               </div>
               <div><span><i class="fa-solid fa-arrow-right-long"></i></span></div>
               <div><div>
-              <button type="button" onclick = "loadNewsDetail('${news._id}')" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsDetailsModal">  Details </button>
+              <categoriesLi type="categoriesLi" onclick = "loadNewsDetail('${news._id}')" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsDetailsModal">  Details </categoriesLi>
               </div></div>
               </div>
               </p>
