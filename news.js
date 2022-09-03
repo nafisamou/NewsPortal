@@ -85,10 +85,14 @@ const loadCategory =  () => {
 
       const displayNewsDetails = (details) =>{
         const modalTittle = document.getElementById('newsDetailsModalLabel');
-        modalTittle.innerText = details.category_id;
+        modalTittle.innerText = details.title;
         const newsDetails = document.getElementById('news-details');
         newsDetails.innerHTML = `
-        <p>Id: ${details.details}</p>
+        <h4 class='fw-bold'>Author Name : ${details.author.name?details.author.name:'no data available'}</h4>
+        <h6>Publish Date:- ${details.author.published_date?details.author.published_date:'no data available'}</h6>
+        <img class="w-50 h-50" src = "${details.author.img?details.author.img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLNH63Z50DVYfyM4ukaYZFjv1K9e_qPaJuVc9Kq6ifXE49GMfvZpEvmDRwMh2aZtys94&usqp=CAU'}" alt="news-image">
+        <h6 class = 'fw-bolder mt-3'>Total View: <span><i class="fa-regular fa-eye"></i></span> ${details.total_view}</h6>
+        <p class = 'mt-3'> ${details.details.length>200 ?details.details.slice(0,200) + '....':'no data available'}</p>
         <img class="w-50" src = "${details.thumbnail_url?details.thumbnail_url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLNH63Z50DVYfyM4ukaYZFjv1K9e_qPaJuVc9Kq6ifXE49GMfvZpEvmDRwMh2aZtys94&usqp=CAU'}" alt="news-image">
         `
       }
