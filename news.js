@@ -44,7 +44,7 @@ const loadCategory =  () => {
             <div class="col-md-9">
               <div class="card-body">
                 <h5 class="card-title">${news.title}</h5>
-              <p class="card-text">${news.details.slice(0,250)}</p>
+              <p class="card-text">${news.details.length>300 ?news.details.slice(0,300) + '....':'no data available'}</p>
                 <p class="card-text mt-5 pt-5 py-5">
                 <div class= 'd-flex justify-content-between'>
                 <div><span><img src="${news.author.img}" class="img-fluid w-25 rounded-start" style="height:30px;" alt="..."></span>
