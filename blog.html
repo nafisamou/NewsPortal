@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/1e61186321.js" crossorigin="anonymous"></script>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <!-- css link -->
+     <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+</head>
+<body class="container"> 
+    <header>
+        <section class="container">
+          <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"
+                ><span class="fw-semibold bg-primary text-white py-2 px-2 rounded-end me-1">Epoch</span> <span class="">Daily</span></a
+            >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"
+                      >NEWS</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="blog.html">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <img
+                      class="user-img"
+                      src="./image/6fdd7491a9f5dddc332e5a955100097a.jpg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container"><hr /></div>
+        </section>
+      </header>
+    <main class=" container mt-5">
+        <h1 class="text-bg-primary rounded-5 mb-5 px-1 py-3 fw-semibold text-center">Welcome to Our Blog Web</h1>
+        <section>
+           <div class=" rounded-5  p-5 bg">
+            <h2>1. What's the difference between let & const?</h2>
+            <p class="fs-4 ms-4">
+                <strong>Here is the differences :</strong>
+            <ul class="fs-5">
+                <li> let can be updated but not re-declared.
+                </li>
+                <li>
+                const can not be updated and re-declared.
+                </li>
+            </ul>
+            </p>
+           </div>
+        </section>
+        <section>
+           <div class="bg rounded-5  p-5 mt-5">
+            <h2> 2. What's the difference between Regular Function & Arrow Function?</h2>
+            <p class="fs-4 ms-4"><strong>Here is the differences :</strong>
+                <ul class="fs-5">
+                    <li> Regular functions have their own 'this'. Arrow functions don't have their own 'this'.
+                    </li>
+                    <li> We can have duplicate parameters in regular functions. We can't have duplicate parameters in arrow functions.
+                    </li>
+                </ul>
+            </p>
+           </div>
+        </section>
+        <section>
+           <div class="bg rounded-5  p-5 mt-5">
+            <h2> 3. What are the differences among forEach, map, filter, find?</h2>
+            <p class="fs-4 ms-4">
+                <strong>Here is the differences :</strong> 
+            <ul class="fs-5">
+                <li>Foreach takes a callback function and run that callback function on each element of array one by one.
+                    <li>Function .map() is a manipulative function that can modify each element's content in an array that it is called on. This function returns a new array with modified values, the array that it is called on will stay still</li>
+                    <li>3.filter does not update the existing array it will return a new filtered array every time.</li>
+                     <li>Function .find() is also a search function like the previous but they differ in one small detail — this function returns only one match in an array. If in an array is more than one result, the function will return the first that has matched.</li>
+                    <li> Function .reduce() is an accumulative function that can find a total of all or selected values in an array. This function also is used in both terms, thus supporting object deconstructing</li>
+            </ul>
+            </p>
+           </div>
+        </section>
+        <section>
+           <div class="bg rounded-5  p-5 mt-5">
+            <h2> 4.Why do you use template string?</h2>
+            <p class="fs-4">
+                <strong> I use template string for,</strong>
+             <ul class="fs-5">
+                <li>Template literals are sometimes informally called template strings, because they are used most commonly for string interpolation (to create strings by doing substitution of placeholders). However, a tagged template literal may not result in a string; it can be used with a custom tag function to perform whatever operations you want on the different parts of the template literal.</li>
+             </ul>
+            </p>
+           </div>
+        </section>
+        
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./news.js"></script>
+</body>
+</html>

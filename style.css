@@ -1,0 +1,35 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    
+  }
+  header span{
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 1px;
+}
+header ul li {
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+nav .navbar-brand {
+    color: rgb(98, 98, 224);
+  }
+header ul li:hover {
+    color: rgb(83, 83, 244);
+  }
+#total-found{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+.user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+/* blog */
+.bg{
+background-color: rgba(34, 102, 102, 0.227);
+}
